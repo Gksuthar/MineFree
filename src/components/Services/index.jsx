@@ -64,7 +64,7 @@ const Services = () => {
           </div>
           
           <div className="services-image">
-            <img src="https://res-console.cloudinary.com/dsu49fx2b/media_explorer_thumbnails/e3428a8218e18842281837626e1d8174/detailed" alt="Services Illustration" loading="lazy" />
+            <img src="https://res.cloudinary.com/dsu49fx2b/image/upload/v1742811205/ungde6wbrkudgwjmxvnm.png" alt="Services Illustration" loading="lazy" />
           </div>
         </div>
       </section>
