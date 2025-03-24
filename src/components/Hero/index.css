@@ -28,7 +28,7 @@ body {
   position: relative; /* Changed to relative to take up space in the document flow */
   width: 100vw;
   height: 1024px;
-  background: url('https://res-console.cloudinary.com/dsu49fx2b/media_explorer_thumbnails/3de165d7adb0ae96208b827dcd8a617a/detailed') no-repeat center center;
+  background: url('https://res.cloudinary.com/dsu49fx2b/image/upload/v1742811205/ungde6wbrkudgwjmxvnm.png') no-repeat center center;
   background-size: cover;
 }
 

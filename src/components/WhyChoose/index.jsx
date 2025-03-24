@@ -18,10 +18,10 @@ const WhyChooseObiztec = () => {
       <div className="why-img-box">
         <div className="img-rectangle"></div>
         <div className="img-1">
-          <img src="https://res-console.cloudinary.com/dsu49fx2b/media_explorer_thumbnails/e202be04e4bdd0145d0d06e9aca98cac/detailed" alt="Image 1" />
+          <img src="https://res.cloudinary.com/dsu49fx2b/image/upload/v1742811703/erz49zumffusdcvzhglg.png" alt="Image 1" />
         </div>
         <div className="img-2">
-          <img src="https://res-console.cloudinary.com/dsu49fx2b/media_explorer_thumbnails/8f197125df512f8dde160b90f41ac3c0/detailed" alt="Image 2" />
+          <img src="https://res.cloudinary.com/dsu49fx2b/image/upload/v1742811703/pv0wojpb2ygptc3imljs.png" alt="Image 2" />
         </div>
       </div>
       <div className="why-text">
