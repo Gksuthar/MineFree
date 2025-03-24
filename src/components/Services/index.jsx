@@ -14,7 +14,7 @@ const Services = () => {
             {/* Service 1: Website Development */}
             <div className="service-item service-1">
               <div className="service-icon web-dev-icon">
-                <img src="" alt="Website Development Icon" />
+                <img src="https://res.cloudinary.com/dsu49fx2b/image/upload/v1742816395/xvtnswiem3sgtowkpbhy.png" alt="Website Development Icon" />
               </div>
               <div className="service-text">
                 <h3>Website Development</h3>
@@ -24,7 +24,7 @@ const Services = () => {
             {/* Service 2: E-Commerce Solutions */}
             <div className="service-item service-2">
               <div className="service-icon ecommerce-icon">
-                <img src="/../../../public/Layer 2.png" alt="E-Commerce Icon" />
+                <img src="https://res.cloudinary.com/dsu49fx2b/image/upload/v1742816417/s46wz4fjfunr3pvtsglx.png" alt="E-Commerce Icon" />
               </div>
               <div className="service-text">
                 <h3>E-Commerce Solutions</h3>
@@ -34,7 +34,7 @@ const Services = () => {
             {/* Service 3: Mobile App Development */}
             <div className="service-item service-3">
               <div className="service-icon mobile-app-icon">
-                <img src="/../../../public/Vector.png" alt="Mobile App Icon" />
+                <img src="https://res.cloudinary.com/dsu49fx2b/image/upload/v1742816419/bwd6f1zkecortqncr16r.png" alt="Mobile App Icon" />
               </div>
               <div className="service-text">
                 <h3>Mobile App Development</h3>
@@ -44,7 +44,7 @@ const Services = () => {
             {/* Service 4: SEO & Digital Marketing */}
             <div className="service-item service-4">
               <div className="service-icon seo-icon">
-                <img src="/../../../public/Group.png" alt="SEO Icon" />
+                <img src="https://res.cloudinary.com/dsu49fx2b/image/upload/v1742816403/avlzkiiwe6cxpmpxfbev.png" alt="SEO Icon" />
               </div>
               <div className="service-text">
                 <h3>SEO & Digital Marketing</h3>
@@ -54,7 +54,7 @@ const Services = () => {
             {/* Service 5: Branding & Design */}
             <div className="service-item service-5">
               <div className="service-icon branding-icon">
-                <img src="../../../public/marketing_campaign_promotion_advertising_branding_marketing_icon_262996 1.png" alt="Branding Icon" />
+                <img src="https://res.cloudinary.com/dsu49fx2b/image/upload/v1742816419/kfkmkpmjj4keqzhjz6m3.png" alt="Branding Icon" />
               </div>
               <div className="service-text">
                 <h3>Branding & Design</h3>
