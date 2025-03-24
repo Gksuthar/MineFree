@@ -28,7 +28,7 @@ const WhyChooseObiztec = () => {
         <div className="why-text-box">
           <div className="why-item why-1">
             <div className="icon">
-              <img src="../../../public/Group.svg" alt="Check Icon" className="check-icon" />
+              <img src="https://res.cloudinary.com/dsu49fx2b/image/upload/v1742816699/a9d9nzqe4j0fpjtzvhky.png" alt="Check Icon" className="check-icon" />
             </div>
             <div className="text-box">
               <h3>Affordable & Scalable Solutions</h3>
@@ -37,7 +37,7 @@ const WhyChooseObiztec = () => {
           </div>
           <div className="why-item why-2">
             <div className="icon">
-              <img src="../../../public/Group.svg" alt="Check Icon" className="check-icon" />
+              <img src="https://res.cloudinary.com/dsu49fx2b/image/upload/v1742816699/a9d9nzqe4j0fpjtzvhky.png" alt="Check Icon" className="check-icon" />
             </div>
             <div className="text-box">
               <h3>Custom Development</h3>
@@ -46,7 +46,7 @@ const WhyChooseObiztec = () => {
           </div>
           <div className="why-item why-3">
             <div className="icon">
-              <img src="../../../public/Group.svg" alt="Check Icon" className="check-icon" />
+              <img src="https://res.cloudinary.com/dsu49fx2b/image/upload/v1742816699/a9d9nzqe4j0fpjtzvhky.png" alt="Check Icon" className="check-icon" />
             </div>
             <div className="text-box">
               <h3>Fast Turnaround</h3>
@@ -55,7 +55,7 @@ const WhyChooseObiztec = () => {
           </div>
           <div className="why-item why-4">
             <div className="icon">
-              <img src="../../../public/Group.svg" alt="Check Icon" className="check-icon" />
+              <img src="https://res.cloudinary.com/dsu49fx2b/image/upload/v1742816699/a9d9nzqe4j0fpjtzvhky.png" alt="Check Icon" className="check-icon" />
             </div>
             <div className="text-box">
               <h3>Post-Launch Support</h3>
@@ -64,7 +64,7 @@ const WhyChooseObiztec = () => {
           </div>
           <div className="why-item why-5">
             <div className="icon">
-              <img src="../../../public/Group.svg" alt="Check Icon" className="check-icon" />
+              <img src="https://res.cloudinary.com/dsu49fx2b/image/upload/v1742816699/a9d9nzqe4j0fpjtzvhky.png" alt="Check Icon" className="check-icon" />
             </div>
             <div className="text-box">
               <h3>Proven Expertise</h3>
