@@ -124,6 +124,19 @@
   width: 100%;
   /* background-color: bisque; */
 }
+.why-5 .icon{
+  
+  position: absolute;
+  left: 27% !important;
+}
+.why-3 .icon{
+  
+  position: absolute;
+  left: 4% !important;
+}
+.why-3{
+  padding-left: 30px !important;
+}
 
 /* Why Item */
 .why-item {

@@ -21,8 +21,13 @@ const WelcomeSection = () => {
           {/* Feature 2: Our Mission */}
           <div className="feature feature-2">
             <div className="feature-background">
-              <div className="ellipse ellipse-1"></div>
-              <div className="ellipse ellipse-2"></div>
+              <div className="ellipse ellipse-1">
+                <img src="" alt="" />
+              </div>
+              <div className="ellipse ellipse-2">
+
+                {/* <img src="https://res.cloudinary.com/dsu49fx2b/image/upload/v1742817506/gmhufcspmkjmokcokhpe.png" alt="" /> */}
+              </div>
               <div className="rectangle rectangle-3"></div>
               <div className="icon mission-icon">
                 {/* Mission आइकन के लिए प्लेसहोल्डर */}
