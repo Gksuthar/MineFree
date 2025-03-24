@@ -1,0 +1,151 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 90px;
+  z-index: 20; /* Ensure it stays above other content */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for visibility */
+  display: flex; /* Use flexbox for layout */
+  align-items: center;
+  justify-content: space-between; /* Space out logo, links, and button */
+  padding: 0 80px; /* Add padding for spacing */
+}
+
+.navbar-logo {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.logo-highlight {
+  color: #22c55e;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* Increased gap for better spacing */
+}
+
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown Toggle (Home, Pages, Services, etc.) */
+.dropdown-toggle {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between text and arrow */
+}
+
+/* Dropdown Arrow */
+.dropdown-arrow {
+  width: 8px;
+  height: 8px;
+  color: #22c55e;
+}
+
+/* Nav Links (Contact Us, About Us, Our Approach) */
+.nav-link {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Hover Effects */
+.dropdown-toggle:hover,
+.nav-link:hover {
+  color: #22c55e;
+}
+
+/* Navbar Button */
+.navbar-button {
+  width: 211px;
+  height: 49px;
+  background-color: #22c55e;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1.25px;
+  color: #000000;
+  padding: 0 1.5rem;
+}
+
+.navbar-button:hover {
+  background-color: #16a34a;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 40px; /* Reduce padding on smaller screens */
+  }
+
+  .navbar-links {
+    gap: 1.5rem; /* Reduce gap for smaller screens */
+  }
+
+  .navbar-button {
+    width: 180px; /* Slightly smaller button */
+    height: 45px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .navbar-logo {
+    margin-bottom: 20px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown-toggle,
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .navbar-button {
+    width: 150px;
+    height: 40px;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+}

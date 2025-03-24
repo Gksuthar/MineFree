@@ -1,0 +1,580 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap');
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Ensure the parent container allows for proper flow */
+body {
+  position: relative;
+  min-height: 3140px; /* Adjusted to accommodate all sections */
+}
+
+/* Hero Section */
+.hero {
+  position: relative; /* Changed to relative to take up space in the document flow */
+  width: 100vw;
+  height: 1024px;
+  background: url('https://res-console.cloudinary.com/dsu49fx2b/media_explorer_thumbnails/3de165d7adb0ae96208b827dcd8a617a/detailed') no-repeat center center;
+  background-size: cover;
+}
+
+/* Hero Content */
+.hero-content {
+  position: absolute;
+  width: 1068px;
+  height: 189px;
+  left: 80px;
+  top: 565px;
+}
+
+/* Hero Title: Empowering Businesses */
+.hero-title {
+  position: absolute;
+  width: 1006px;
+  height: 113px;
+  left: 3px; /* 83px - 80px (relative to hero-content) */
+  top: 0; /* 565px - 565px */
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 93px;
+  line-height: 113px;
+  letter-spacing: -1.5px;
+  color: #FFFFFF;
+}
+
+/* Hero Subtitle: with Affordable Custom Tech Solutions */
+.hero-subtitle {
+  position: absolute;
+  width: 1068px;
+  height: 70px;
+  left: 0; /* 80px - 80px */
+  top: 119px; /* 684px - 565px */
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 70px;
+  color: #FFFFFF;
+}
+
+/* Hero Button */
+.hero-button {
+  position: absolute;
+  width: 276.38px;
+  height: 64.18px;
+  left: 0; /* 80px - 80px */
+  top: 239px; /* 804px - 565px */
+  background: #58F93B;
+  border-radius: 130.987px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20.9579px;
+  line-height: 25px;
+  letter-spacing: 1.63734px;
+  color: #000000;
+  z-index: 1;
+}
+
+.hero-button:hover {
+  background: #16a34a; /* Slightly darker green on hover */
+}
+
+/* Navbar Styles */
+.navbar {
+  position: sticky; /* Fix the navbar at the top while scrolling */
+  top: 0;
+  width: 100vw;
+  height: 90px;
+  z-index: 20; /* Ensure it stays above other content */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for visibility */
+  display: flex; /* Use flexbox for layout */
+  align-items: center;
+  justify-content: space-between; /* Space out logo, links, and button */
+  padding: 0 80px; /* Add padding for spacing */
+}
+
+.navbar-logo {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.logo-highlight {
+  color: #22c55e;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* Increased gap for better spacing */
+}
+
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown Toggle (Home, Pages, Services, etc.) */
+.dropdown-toggle {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between text and arrow */
+}
+
+/* Dropdown Arrow */
+.dropdown-arrow {
+  width: 8px;
+  height: 8px;
+  color: #22c55e;
+}
+
+/* Nav Links (Contact Us, About Us, Our Approach) */
+.nav-link {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Hover Effects */
+.dropdown-toggle:hover,
+.nav-link:hover {
+  color: #22c55e;
+}
+
+/* Navbar Button */
+.navbar-button {
+  width: 211px;
+  height: 49px;
+  background-color: #22c55e;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1.25px;
+  color: #000000;
+  padding: 0 1.5rem;
+}
+
+.navbar-button:hover {
+  background-color: #16a34a;
+}
+
+/* WelcomeSection CSS */
+.section-features {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  margin-top: 3rem; /* Small margin for spacing between Hero and WelcomeSection */
+}
+
+.features {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100% !important;
+  max-width: 1280px;
+  margin-bottom: 3rem;
+}
+
+.welcome-heading {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 47px;
+  line-height: 57px;
+  letter-spacing: -0.005em;
+  color: #000000;
+  text-align: center;
+  position: relative;
+  margin: 0;
+}
+
+.heading-decore {
+  position: absolute;
+  top: -15px;
+  left: -40px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.subtract {
+  background: #58F93B;
+}
+
+.subtract-1 {
+  width: 20px;
+  height: 20px;
+}
+
+.subtract-2 {
+  width: 10px;
+  height: 10px;
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1280px;
+  gap: 2rem;
+}
+
+.feature {
+  position: relative;
+  width: 411px;
+  box-shadow: 0px 12px 24px 1px rgba(18, 50, 12, 0.1);
+  border-radius: 999999999px;
+}
+
+.feature-background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #EEFEEB;
+  border-radius: 999999999px;
+  overflow: hidden;
+}
+
+.ellipse {
+  position: absolute;
+  width: 411px;
+  height: 411px;
+  background: transparent;
+  border-radius: 50%;
+}
+
+.rectangle {
+  position: absolute;
+  width: 411px;
+  background: transparent;
+}
+
+.icon {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.vector {
+  position: absolute;
+  background: #58F93B;
+}
+
+.feature-content {
+  position: relative;
+  padding: 70px 30px;
+  text-align: center;
+}
+
+.feature-heading {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 44px;
+  letter-spacing: 0.25px;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.feature-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+/* Feature 1: Affordable Solutions */
+.feature-1 {
+  height: 545px;
+}
+
+.feature-1 .feature-background {
+  height: 545px;
+}
+
+.feature-1 .ellipse-1 {
+  top: 0;
+}
+
+.feature-1 .ellipse-2 {
+  top: 134px;
+}
+
+.feature-1 .rectangle-3 {
+  height: 137px;
+  top: 214px;
+}
+
+.feature-1 .development-icon {
+  top: 100px;
+}
+
+.feature-1 .vector-1 {
+  left: 4.17%;
+  right: 4.17%;
+  top: 4.17%;
+  bottom: 4.17%;
+}
+
+.feature-1 .vector-2 {
+  left: 29.14%;
+  right: 54.14%;
+  top: 49.98%;
+  bottom: 24.98%;
+}
+
+.feature-1 .vector-3 {
+  left: 54.14%;
+  right: 29.14%;
+  top: 49.98%;
+  bottom: 24.98%;
+}
+
+.feature-1 .feature-content {
+  padding-top: 250px;
+}
+
+/* Feature 2: Our Mission */
+.feature-2 {
+  height: 702px;
+}
+
+.feature-2 .feature-background {
+  height: 702px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.feature-2 .ellipse-1 {
+  top: 0;
+}
+
+.feature-2 .ellipse-2 {
+  top: 291px;
+}
+
+.feature-2 .rectangle-3 {
+  height: 274px;
+  top: 214px;
+}
+
+.feature-2 .mission-icon {
+  top: 100px;
+}
+
+.feature-2 .vector-1 {
+  left: 28.15%;
+  right: 28.12%;
+  top: 3.07%;
+  bottom: 2.98%;
+}
+
+.feature-2 .vector-2 {
+  left: 59.29%;
+  right: 9.37%;
+  top: 9.34%;
+  bottom: 53.12%;
+}
+
+.feature-2 .feature-content {
+  padding-top: 250px;
+}
+
+/* Feature 3: Our Goal */
+.feature-3 {
+  height: 822px;
+}
+
+.feature-3 .feature-background {
+  height: 822px;
+}
+
+.feature-3 .ellipse-1 {
+  top: 0;
+}
+
+.feature-3 .ellipse-2 {
+  top: 411px;
+}
+
+.feature-3 .rectangle-3 {
+  height: 389px;
+  top: 214px;
+}
+
+.feature-3 .goal-icon {
+  top: 162px;
+}
+
+.feature-3 .vector-1 {
+  left: 3.44%;
+  right: 2.29%;
+  top: 2.85%;
+  bottom: 2.48%;
+}
+
+.feature-3 .vector-2 {
+  left: 31.05%;
+  right: 36.42%;
+  top: 37.37%;
+  bottom: 30.09%;
+}
+
+.feature-3 .vector-3 {
+  left: 3.44%;
+  right: 8.66%;
+  top: 9.62%;
+  bottom: 2.48%;
+}
+
+.feature-3 .feature-content {
+  padding-top: 312px;
+}
+
+/* Responsive Design for Navbar, Hero, and WelcomeSection */
+@media (max-width: 1280px) {
+  .section-features {
+    margin-top: 2rem; /* Adjust spacing for smaller screens */
+  }
+
+  .features-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .feature {
+    width: 33%;
+    min-width: 300px;
+  }
+
+  .feature-content {
+    padding: 1rem;
+  }
+
+  .feature-1 .feature-content,
+  .feature-2 .feature-content,
+  .feature-3 .feature-content {
+    padding-top: 200px;
+  }
+
+  .navbar {
+    padding: 0 40px; /* Reduce padding on smaller screens */
+  }
+
+  .navbar-links {
+    gap: 1.5rem; /* Reduce gap for smaller screens */
+  }
+
+  .navbar-button {
+    width: 180px; /* Slightly smaller button */
+    height: 45px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .navbar-logo {
+    margin-bottom: 20px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown-toggle,
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .navbar-button {
+    width: 150px;
+    height: 40px;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+  .hero-content {
+    width: 90%;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .hero-title {
+    font-size: 60px;
+    line-height: 70px;
+    width: 100%;
+  }
+
+  .hero-subtitle {
+    font-size: 40px;
+    line-height: 50px;
+    width: 100%;
+  }
+
+  .hero-button {
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+  }
+}

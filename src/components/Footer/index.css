@@ -1,0 +1,290 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap');
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Ensure the parent container allows for proper flow */
+body {
+  position: relative;
+  min-height: 100vh; /* Ensure the body takes up at least the viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content wrapper to push footer to the bottom */
+main {
+  flex: 1 0 auto; /* Grow to fill available space */
+}
+
+/* Footer */
+.footer {
+  position: relative; /* Changed to relative to flow naturally */
+  width: 100%;
+  background: #091906; /* Blackish green */
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  padding: 50px 0;
+  flex-shrink: 0; /* Prevent footer from shrinking */
+  margin-top: 3rem; /* Add spacing after the previous section */
+}
+
+/* Footer Columns Container */
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1258px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* General Column Styling */
+.footer-col {
+  margin-bottom: 40px;
+}
+
+/* Column 1: Company Info */
+.footer-col-1 {
+  width: 388px;
+}
+
+.footer-col-1 .logo {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-col-1 h3 {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.25px;
+  margin-bottom: 20px;
+}
+
+.footer-col-1 h4 {
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #eefeeb;
+  margin-bottom: 15px;
+}
+
+.footer-col-1 p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+/* Column 2: Quick Links */
+.footer-col-2 {
+  width: 186px;
+}
+
+.footer-col-2 h2 {
+  font-size: 33px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0.25px;
+  margin-bottom: 20px;
+}
+
+.footer-col-2 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col-2 ul li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+
+/* Column 3: Services */
+.footer-col-3 {
+  width: 218px;
+}
+
+.footer-col-3 h2 {
+  font-size: 33px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0.25px;
+  margin-bottom: 20px;
+}
+
+.footer-col-3 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col-3 ul li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+
+/* Column 4: Legal & Policies */
+.footer-col-4 {
+  width: 247px;
+}
+
+.footer-col-4 h2 {
+  font-size: 33px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0.25px;
+  margin-bottom: 20px;
+}
+
+.footer-col-4 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col-4 ul li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+
+/* Column 5: Contact Info */
+.footer-col-5 {
+  width: 481px;
+}
+
+.footer-col-5 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col-5 ul li {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+
+.footer-col-5 .icon {
+  margin-right: 10px;
+  color: #58f93b;
+}
+
+/* Column 6: Social Media */
+.footer-col-6 {
+  width: 180px;
+}
+
+.footer-col-6 h2 {
+  font-size: 33px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0.25px;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  background: #eefeeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #091906;
+}
+
+/* Divider Line */
+.divider {
+  width: 100%;
+  height: 1px;
+  background: #12320c;
+  margin: 40px 0;
+}
+
+/* Copyright */
+.copyright {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 1280px) {
+  .footer-columns {
+    justify-content: space-around;
+  }
+
+  .footer-col-1,
+  .footer-col-2,
+  .footer-col-3,
+  .footer-col-4,
+  .footer-col-5,
+  .footer-col-6 {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 0;
+    margin-top: 2rem;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-col {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-col-1,
+  .footer-col-2,
+  .footer-col-3,
+  .footer-col-4,
+  .footer-col-5,
+  .footer-col-6 {
+    width: 100%;
+  }
+
+  .footer-col-5 ul li,
+  .footer-col-6 .social-icons {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,320 @@
+/* Section Features */
+.section-features {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  margin-top: 104px; /* Start after the Hero section (1024px height) */
+}
+
+/* Features Container */
+.features {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading Container */
+.heading-container {
+  position: relative; /* Changed to relative to flow naturally within the section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw !important;
+  max-width: 1280px;
+  margin-bottom: 3rem;
+}
+
+/* Welcome Heading */
+.welcome-heading {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 47px;
+  line-height: 57px;
+  letter-spacing: -0.005em;
+  color: #000000;
+  text-align: center;
+  position: relative;
+  margin: 0;
+}
+
+/* Heading Decorative Elements */
+.heading-decore {
+  position: absolute;
+  top: -15px;
+  left: -40px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.subtract {
+  background: #58F93B;
+}
+
+.subtract-1 {
+  width: 20px;
+  height: 20px;
+}
+
+.subtract-2 {
+  width: 10px;
+  height: 10px;
+}
+
+/* Features Container (Cards) */
+.features-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1280px;
+  gap: 2rem;
+}
+
+/* Feature Cards */
+.feature {
+  position: relative;
+  width: 411px;
+  box-shadow: 0px 12px 24px 1px rgba(18, 50, 12, 0.1);
+  border-radius: 999999999px;
+}
+
+.feature-background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #EEFEEB;
+  border-radius: 999999999px;
+  overflow: hidden;
+}
+
+.ellipse {
+  position: absolute;
+  width: 411px;
+  height: 411px;
+  background: transparent;
+  border-radius: 50%;
+}
+
+.rectangle {
+  position: absolute;
+  width: 411px;
+  background: transparent;
+}
+
+.icon {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.vector {
+  position: absolute;
+  background: #58F93B;
+}
+
+.feature-content {
+  position: relative;
+  padding: 70px 30px;
+  text-align: center;
+}
+
+.feature-heading {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 44px;
+  letter-spacing: 0.25px;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.feature-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+/* Feature 1: Affordable Solutions */
+.feature-1 {
+  height: 545px;
+}
+
+.feature-1 .feature-background {
+  height: 545px;
+}
+
+.feature-1 .ellipse-1 {
+  top: 0;
+}
+
+.feature-1 .ellipse-2 {
+  top: 134px;
+}
+
+.feature-1 .rectangle-3 {
+  height: 137px;
+  top: 214px;
+}
+
+.feature-1 .development-icon {
+  top: 100px;
+}
+
+.feature-1 .vector-1 {
+  left: 4.17%;
+  right: 4.17%;
+  top: 4.17%;
+  bottom: 4.17%;
+}
+
+.feature-1 .vector-2 {
+  left: 29.14%;
+  right: 54.14%;
+  top: 49.98%;
+  bottom: 24.98%;
+}
+
+.feature-1 .vector-3 {
+  left: 54.14%;
+  right: 29.14%;
+  top: 49.98%;
+  bottom: 24.98%;
+}
+
+.feature-1 .feature-content {
+  padding-top: 250px;
+}
+
+/* Feature 2: Our Mission */
+.feature-2 {
+  height: 702px;
+}
+
+.feature-2 .feature-background {
+  height: 702px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.feature-2 .ellipse-1 {
+  top: 0;
+}
+
+.feature-2 .ellipse-2 {
+  top: 291px;
+}
+
+.feature-2 .rectangle-3 {
+  height: 274px;
+  top: 214px;
+}
+
+.feature-2 .mission-icon {
+  top: 100px;
+}
+
+.feature-2 .vector-1 {
+  left: 28.15%;
+  right: 28.12%;
+  top: 3.07%;
+  bottom: 2.98%;
+}
+
+.feature-2 .vector-2 {
+  left: 59.29%;
+  right: 9.37%;
+  top: 9.34%;
+  bottom: 53.12%;
+}
+
+.feature-2 .feature-content {
+  padding-top: 250px;
+}
+
+/* Feature 3: Our Goal */
+.feature-3 {
+  height: 822px;
+}
+
+.feature-3 .feature-background {
+  height: 822px;
+}
+
+.feature-3 .ellipse-1 {
+  top: 0;
+}
+
+.feature-3 .ellipse-2 {
+  top: 411px;
+}
+
+.feature-3 .rectangle-3 {
+  height: 389px;
+  top: 214px;
+}
+
+.feature-3 .goal-icon {
+  top: 162px;
+}
+
+.feature-3 .vector-1 {
+  left: 3.44%;
+  right: 2.29%;
+  top: 2.85%;
+  bottom: 2.48%;
+}
+
+.feature-3 .vector-2 {
+  left: 31.05%;
+  right: 36.42%;
+  top: 37.37%;
+  bottom: 30.09%;
+}
+
+.feature-3 .vector-3 {
+  left: 3.44%;
+  right: 8.66%;
+  top: 9.62%;
+  bottom: 2.48%;
+}
+
+.feature-3 .feature-content {
+  padding-top: 312px;
+}
+
+/* Responsive Design */
+@media (max-width: 1280px) {
+  .section-features {
+    margin-top: 1024px; /* Ensure the section starts after Hero on smaller screens */
+  }
+
+  .features-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .feature {
+    width: 33%;
+    min-width: 300px;
+  }
+
+  .feature-content {
+    padding: 1rem;
+  }
+
+  .feature-1 .feature-content,
+  .feature-2 .feature-content,
+  .feature-3 .feature-content {
+    padding-top: 200px;
+  }
+}
