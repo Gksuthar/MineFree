@@ -38,14 +38,12 @@ const WelcomeSection = () => {
             </div>
           </div>
 
-          {/* Feature 1: Affordable Solutions */}
           <div className="feature feature-1">
             <div className="feature-background">
               <div className="ellipse ellipse-1"></div>
               <div className="ellipse ellipse-2"></div>
               <div className="rectangle rectangle-3"></div>
               <div className="icon development-icon">
-                {/* Development आइकन के लिए प्लेसहोल्डर */}
                 <div className="vector vector-1"></div>
                 <div className="vector vector-2"></div>
                 <div className="vector vector-3"></div>

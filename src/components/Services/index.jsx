@@ -14,7 +14,7 @@ const Services = () => {
             {/* Service 1: Website Development */}
             <div className="service-item service-1">
               <div className="service-icon web-dev-icon">
-                <img src="https://res-console.cloudinary.com/dsu49fx2b/media_explorer_thumbnails/e3428a8218e18842281837626e1d8174/detailed" alt="Website Development Icon" />
+                <img src="" alt="Website Development Icon" />
               </div>
               <div className="service-text">
                 <h3>Website Development</h3>
@@ -64,7 +64,7 @@ const Services = () => {
           </div>
           
           <div className="services-image">
-            <img src="../../../public/services img.png" alt="Services Illustration" loading="lazy" />
+            <img src="https://res-console.cloudinary.com/dsu49fx2b/media_explorer_thumbnails/e3428a8218e18842281837626e1d8174/detailed" alt="Services Illustration" loading="lazy" />
           </div>
         </div>
       </section>
