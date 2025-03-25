@@ -38,7 +38,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Column 4: Legal & Policies */}
         <div className="footer-col footer-col-4">
           <h2>Legal & Policies</h2>
           <ul>
