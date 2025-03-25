@@ -1,9 +1,9 @@
 
 /* Navbar Styles */
 .navbar {
-  /* position: fixed;
-  top: 0; */
-  width: 1440px;
+  position: fixed;
+  top: 0;
+  /* width: 1440px; */
   height: 90px;
   z-index: 20; /* Ensure it stays above other content */
   display: flex; /* Use flexbox for layout */

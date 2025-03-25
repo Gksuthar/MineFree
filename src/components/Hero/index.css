@@ -8,7 +8,7 @@
 /* Thisis hero css */
 .hero {
   position: relative; /* Changed to relative to take up space in the document flow */
-  width: 1440px;
+  width: 100vw;
   height: 1024px;
   /* border: 2px solid red; */
   background: url('https://res.cloudinary.com/dsu49fx2b/image/upload/v1742811205/ungde6wbrkudgwjmxvnm.png') no-repeat center center;
@@ -81,7 +81,7 @@
 
 /* Navbar Styles */
 .navbar {
-  /* position: fixed; */
+  position: fixed;
   top: 0px;
   width: 100vw;
   height: 90px;
