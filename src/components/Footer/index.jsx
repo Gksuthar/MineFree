@@ -18,14 +18,9 @@ const Footer = () => {
         <div className="footer-col footer-col-2">
           <h2>Quick Links</h2>
           <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Our Approach</li>
-            <li>Pricing</li>
-            <li>Portfolio</li>
-            <li>Blog</li>
-            <li>FAQs</li>
-            <li>Get a Quote</li>
+            {['Home', 'About Us', 'Our Approach', 'Pricing', 'Portfolio', 'Blog', 'FAQs', 'Get a Quote'].map((item) => (
+              <li key={item}>{item}</li>
+            ))}
           </ul>
         </div>
 
@@ -33,15 +28,13 @@ const Footer = () => {
         <div className="footer-col footer-col-3">
           <h2>Services</h2>
           <ul>
-            <li>Email Marketing</li>
-            <li>Newsletter Management</li>
-            <li>Web Development</li>
-            <li>E-Commerce Development</li>
-            <li>SEO Services</li>
-            <li>Social Media Management</li>
-            <li>Google Ads</li>
-            <li>Branding & Design</li>
-            <li>Website Maintenance</li>
+            {[
+              'Email Marketing', 'Newsletter Management', 'Web Development',
+              'E-Commerce Development', 'SEO Services', 'Social Media Management',
+              'Google Ads', 'Branding & Design', 'Website Maintenance'
+            ].map((item) => (
+              <li key={item}>{item}</li>
+            ))}
           </ul>
         </div>
 
@@ -49,11 +42,9 @@ const Footer = () => {
         <div className="footer-col footer-col-4">
           <h2>Legal & Policies</h2>
           <ul>
-            <li>Privacy Policy</li>
-            <li>Terms & Conditions</li>
-            <li>Refund Policy</li>
-            <li>Cookie Policy</li>
-            <li>Service Agreement</li>
+            {['Privacy Policy', 'Terms & Conditions', 'Refund Policy', 'Cookie Policy', 'Service Agreement'].map((item) => (
+              <li key={item}>{item}</li>
+            ))}
           </ul>
         </div>
 
@@ -61,16 +52,20 @@ const Footer = () => {
         <div className="footer-col footer-col-5">
           <ul>
             <li>
-              <span className="icon">📍</span> Address: 5900 Balcones Drive #24285, Austin, TX 78731
+              <span className="icon">📍</span>
+              Address: 5900 Balcones Drive #24285, Austin, TX 78731
             </li>
             <li>
-              <span className="icon">📧</span> Email: contact@obiztec.com
+              <span className="icon">📧</span>
+              Email: contact@obiztec.com
             </li>
             <li>
-              <span className="icon">📞</span> Phone: +1 (325) 275-5589
+              <span className="icon">📞</span>
+              Phone: +1 (325) 275-5589
             </li>
             <li>
-              <span className="icon">🌐</span> Live Chat: Available
+              <span className="icon">🌐</span>
+              Live Chat: Available
             </li>
           </ul>
         </div>
@@ -80,7 +75,7 @@ const Footer = () => {
           <h2>Follow Us</h2>
           <div className="social-icons">
             <span className="social-icon">f</span>
-            <span className="social-icon">o</span>
+            <span className="social-icon">t</span>
             <span className="social-icon">in</span>
           </div>
         </div>

@@ -68,7 +68,8 @@ const WhyChooseObiztec = () => {
             </div>
             <div className="text-box">
               <h3>Proven Expertise</h3>
-              <p>Experienced team delivering successful projects across industries.</p>
+              <p>A team experienced in web development, 
+              marketing, and app design.</p>
             </div>
           </div>
         </div>

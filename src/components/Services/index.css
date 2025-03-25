@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
 
 /* Services Section (Background) */
-.services-section {
+.services-main-section {
   position: relative; /* Changed to relative to take up space in the document flow */
   width: 100vw !important;
   max-width: 100vw;
   height: auto; /* Let the height adjust based on content */
   margin: 0 auto;
-  margin-top: 3rem; /* Add spacing after the previous section (WelcomeSection) */
+  margin-top: 1000px; /* Already adjusted to start after WelcomeSection */
   background: #091906; /* Blackish green */
   border: 2px solid #58F93B; /* Add rectangular border */
   border-radius: 11px; /* Add border radius */
@@ -17,17 +17,17 @@
 }
 
 /* Heading Container */
-.heading-container {
+.services-heading-container {
   position: relative; /* Changed to relative to flow naturally */
-  width: 100% !important;
-  max-width: 100%;
+  width: 321px; /* Adjusted to match Figma (293px heading + 28px shape) */
+  max-width: 321px;
   height: 57.22px;
   margin-bottom: 50px; /* Add spacing below the heading */
 }
 
 /* Our Services Heading */
-.services-heading {
-  position: relative; /* Changed to relative to flow naturally */
+.services-main-heading {
+  position: relative;
   width: 293px; /* 283 in Figma */
   height: 47.27px;
   font-family: 'Inter', sans-serif;
@@ -40,18 +40,18 @@
 }
 
 /* Subtract Shape (Decorative Element) */
-.subtract-shape {
+.services-subtract-shape {
   position: absolute;
   width: 28px;
   height: 24.51px;
-  left: 285px; /* Position relative to heading-container */
+  left: 293px; /* Positioned right after the heading (293px) */
   top: 0;
   background: #58F93B; /* Primary green */
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
 }
 
 /* Services Content (Container for the list and image) */
-.services-content {
+.services-main-content {
   position: relative; /* Changed to relative to flow naturally */
   width: 100%;
   max-width: 1280px;
@@ -63,75 +63,79 @@
 }
 
 /* Services List */
-.services-list {
+.services-main-list {
   position: relative;
   width: 586px;
   height: auto; /* Let the height adjust based on content */
 }
 
 /* Service Item */
-.service-item {
+.services-main-item {
   position: relative; /* Changed to relative to flow naturally */
   display: flex;
-  align-items: flex-start;
-  margin-bottom: 60px; /* Add spacing between items */
+  align-items: center; /* Vertically center the icon and text */
+  margin-bottom: 40px; /* Reduced spacing to match Figma (~40px) */
 }
 
 /* Remove absolute positioning for service items */
-.service-1,
-.service-2,
-.service-3,
-.service-4,
-.service-5 {
+.services-item-1,
+.services-item-2,
+.services-item-3,
+.services-item-4,
+.services-item-5 {
   width: 100%; /* Let the width adjust naturally */
   height: auto; /* Let the height adjust naturally */
 }
 
 /* Service Icon */
-.service-icon {
+.services-main-icon {
   position: relative; /* Changed to relative to flow naturally */
+  
   flex-shrink: 0; /* Prevent icon from shrinking */
+  margin-right: 30px; /* Add spacing between icon and text */
 }
 
-.service-icon img {
-  width: 100%;
-  height: 100%;
+.services-main-icon img {
+  position: absolute;
+  bottom: 1px ;
+  right: 5px;
+  width: 40px;
+  height: 40px;
 }
 
-/* Specific icon sizes */
+/* Specific icon sizes (Adjusted to match Figma) */
 .web-dev-icon {
-  width: 32.78px;
-  height: 32.78px;
+  width: 24px; /* Reduced to match Figma */
+  height: 24px;
 }
 
 .ecommerce-icon {
-  width: 32.78px;
-  height: 32.78px;
+  width: 24px; /* Reduced to match Figma */
+  height: 24px;
 }
 
 .mobile-app-icon {
-  width: 27.4px;
-  height: 46.3px;
+  width: 20px; /* Reduced to match Figma */
+  height: 34px;
 }
 
 .seo-icon {
-  width: 32.78px;
-  height: 32.78px;
+  width: 24px; /* Reduced to match Figma */
+  height: 24px;
 }
 
 .branding-icon {
-  width: 40.98px;
-  height: 40.98px;
+  width: 30px; /* Reduced to match Figma */
+  height: 30px;
 }
 
 /* Service Text */
-.service-text {
+.services-main-text {
   position: relative; /* Changed to relative to flow naturally */
-  margin-left: 20px; /* Add spacing between icon and text */
 }
 
 /* Service Title (h3) */
-.service-text h3 {
+.services-main-text h3 {
   position: relative; /* Changed to relative to flow naturally */
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -142,16 +146,16 @@
 }
 
 /* Remove specific widths for titles (let them adjust naturally) */
-.service-1 .service-text h3,
-.service-2 .service-text h3,
-.service-3 .service-text h3,
-.service-4 .service-text h3,
-.service-5 .service-text h3 {
+.services-item-1 .services-main-text h3,
+.services-item-2 .services-main-text h3,
+.services-item-3 .services-main-text h3,
+.services-item-4 .services-main-text h3,
+.services-item-5 .services-main-text h3 {
   width: auto;
 }
 
 /* Service Description (p) */
-.service-text p {
+.services-main-text p {
   position: relative; /* Changed to relative to flow naturally */
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -160,51 +164,57 @@
   line-height: 24px;
   letter-spacing: 0.5px;
   color: #FFFFFF;
-  margin-top: 8px; /* Add spacing between title and description */
+  margin-top: 4px; /* Reduced spacing to match Figma */
 }
 
 /* Remove specific widths and top positions for descriptions */
-.service-1 .service-text p,
-.service-2 .service-text p,
-.service-3 .service-text p,
-.service-4 .service-text p,
-.service-5 .service-text p {
+.services-item-1 .services-main-text p,
+.services-item-2 .services-main-text p,
+.services-item-3 .services-main-text p,
+.services-item-4 .services-main-text p,
+.services-item-5 .services-main-text p {
   width: auto;
 }
 
 /* Services Image */
-.services-image {
+.services-main-image {
   position: relative; /* Changed to relative to flow naturally */
+  left: 100px;
+  top: -15px;
+  bottom: 40px;
   width: 629.23px;
-  height: 420px;
-  border: 2px solid #58F93B;
-  border-radius: 11px;
+  height: 520px;
+  border: 2px solid #58F93B; /* Rectangle border integrated here */
+  border-radius: 20px; /* Increased to match Figma */
   box-shadow: 0px 9px 16px -10px #DEFED8;
-  overflow: hidden;
 }
 
-.services-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.services-main-image img {
+  /* right: -100; */
+  /* width: 100%; */
+  position: absolute;
+  top: 35px;
+  right: 40px;
+  height: 90%;
+  /* object-fit: contain; */
 }
 
 /* Responsive Design */
 @media (max-width: 1280px) {
-  .services-section {
+  .services-main-section {
     padding: 40px;
   }
 
-  .services-content {
+  .services-main-content {
     flex-direction: column;
     align-items: center;
   }
 
-  .services-list {
+  .services-main-list {
     width: 100%;
   }
 
-  .services-image {
+  .services-main-image {
     width: 100%;
     max-width: 629.23px;
     height: 420px;
@@ -212,46 +222,46 @@
 }
 
 @media (max-width: 768px) {
-  .services-section {
+  .services-main-section {
     padding: 30px;
-    margin-top: 2rem;
+    margin-top: 2150px; /* Adjusted for smaller screens */
   }
 
-  .heading-container {
+  .services-heading-container {
     max-width: 100%;
     height: auto;
     margin-bottom: 30px;
   }
 
-  .services-heading {
+  .services-main-heading {
     width: 100%;
     font-size: 36px;
     line-height: 44px;
   }
 
-  .subtract-shape {
+  .services-subtract-shape {
     left: 200px; /* Adjust based on new heading width */
   }
 
-  .services-content {
+  .services-main-content {
     gap: 1rem;
   }
 
-  .service-item {
-    margin-bottom: 40px;
+  .services-main-item {
+    margin-bottom: 30px; /* Reduced for smaller screens */
   }
 
-  .service-text h3 {
+  .services-main-text h3 {
     font-size: 20px;
     line-height: 28px;
   }
 
-  .service-text p {
+  .services-main-text p {
     font-size: 14px;
     line-height: 20px;
   }
 
-  .services-image {
+  .services-main-image {
     height: 300px;
   }
 }

@@ -146,7 +146,7 @@ main {
 
 /* Column 4: Legal & Policies */
 .footer-col-4 {
-  width: 247px;
+  width: 272px;
 }
 
 .footer-col-4 h2 {
@@ -168,6 +168,10 @@ main {
   line-height: 24px;
   letter-spacing: 0.5px;
   margin-bottom: 15px;
+}
+.icon{
+  position: absolute;
+  left: 120px;
 }
 
 /* Column 5: Contact Info */

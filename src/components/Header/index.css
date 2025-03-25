@@ -1,25 +1,21 @@
-/* Reset default styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 /* Navbar Styles */
 .navbar {
-  position: fixed;
-  top: 0;
-  width: 100vw;
+  /* position: fixed;
+  top: 0; */
+  width: 1440px;
   height: 90px;
   z-index: 20; /* Ensure it stays above other content */
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for visibility */
   display: flex; /* Use flexbox for layout */
   align-items: center;
   justify-content: space-between; /* Space out logo, links, and button */
   padding: 0 80px; /* Add padding for spacing */
 }
+/* logo */
 
 .navbar-logo {
+  width: 170.86px;
+  height: 46px;
   font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
