@@ -25,8 +25,16 @@
   margin-top: 20px;
   margin-bottom: 50px;
 }
+.why-2 .icon{
+  position: absolute;
+  left: 49%;
+}
+/* .why-3 .icon .check-icon{
+  position: absolute;
+  right: 11%;
+} */
 
-/* Why Choose Obiztec Heading */
+/*  Heading */
 .why-heading {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -137,7 +145,7 @@
 
 .why-3 .icon {
   position: absolute;
-  left: 4% !important;
+  left: 50% !important;
 }
 
 .why-3 {
@@ -182,9 +190,12 @@
 }
 
 /* Remove absolute positioning for icons */
-.why-1 .icon,
+.why-1 .icon{
+  position: static;
+}
 .why-2 .check-icon {
-  position: static; /* Remove absolute positioning */
+  position: absolute; /* Remove absolute positioning */
+  left: 50% !important;
 }
 
 /* Text Box */
