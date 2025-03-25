@@ -143,15 +143,20 @@
   left: 27% !important;
 }
 
+
 .why-3 .icon {
   position: absolute;
   left: 50% !important;
 }
-
-.why-3 {
-  padding-left: 36px !important; /* Increased from 30px (30 * 1.2) */
+.why-4 .icon {
+  position: absolute;
+  left:60px ;
 }
 
+.hello{
+  
+  padding-left: 36px !important; /* Increased from 30px (30 * 1.2) */
+}
 /* Why Item */
 .why-item {
   display: flex;

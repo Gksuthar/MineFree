@@ -48,7 +48,7 @@ const WhyChooseObiztec = () => {
             <div className="icon">
               <img src="https://res.cloudinary.com/dsu49fx2b/image/upload/v1742816699/a9d9nzqe4j0fpjtzvhky.png" alt="Check Icon" className="check-icon" />
             </div>
-            <div className="text-box">
+            <div className="text-box hello">
               <h3>Fast Turnaround</h3>
               <p>Quick delivery without compromising on quality or functionality.</p>
             </div>
